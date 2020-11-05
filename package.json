@@ -1,8 +1,9 @@
 {
-  "name": "imgur-ts",
+  "name": "@lucasliet/imgur-ts",
   "version": "1.0.0",
   "description": "upload images to imgur",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.js",
   "scripts": {
     "start": "nodemon ./src/index.ts",
     "build": "tsc -p .",
@@ -10,7 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucasliet/imgur-ts"
+    "url": "git+https://github.com/lucasliet/imgur-ts.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "imgur",
