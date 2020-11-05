@@ -1,6 +1,6 @@
 {
   "name": "@lucasliet/imgur-ts",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "upload images to imgur",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

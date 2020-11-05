@@ -9,11 +9,9 @@ yarn add @lucasliet/imgur-ts
 ## usage
 
 ```TS
-import Imgur from '@lucasliet/imgur-ts';
-
-const api = new Imgur('YOUR_IMGUR_CLIENT_ID');
+import upload from '@lucasliet/imgur-ts';
 
 async function getImageUrl(){
-  return await api.upload('IMAGE_FILE_PATH');
+  return await upload('IMAGE_FILE_PATH');
 }
 ```
