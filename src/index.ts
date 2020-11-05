@@ -16,7 +16,7 @@ export default class Imgur{
    * Uploads a Image to Imgur asynchronous and returns the image url
    * @param filepath filepath of the image file you want to upload
    */
-  async upload(filepath: string){
+  async upload(filepath: string): Promise<string>{
     const api = new Client({ client_id: this.client_id });
     
     const file_base64 = FileStream.readFileSync(filepath)

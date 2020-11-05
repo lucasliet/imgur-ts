@@ -2,13 +2,18 @@
 this is just a reimplementation of @rmp135/imgur
 
 ## installation
-```yarn add @lucasliet/imgur-ts````
+```SH
+yarn add @lucasliet/imgur-ts
+```
 
 ## usage
 
 ```TS
-import Imgur from '@lucasliet/imgur';
+import Imgur from '@lucasliet/imgur-ts';
 
-const imgur = new Imgur('YOUR_IMGUR_CLIENT_ID');
-imgur.upload('IMAGE_FILE_PATH');
+const api = new Imgur('YOUR_IMGUR_CLIENT_ID');
+
+async function getImageUrl(){
+  return await api.upload('IMAGE_FILE_PATH');
+}
 ```
