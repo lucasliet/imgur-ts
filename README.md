@@ -1,4 +1,4 @@
-# Imageur-ts
+# Imgur-ts
 this is just a reimplementation of @rmp135/imgur
 
 ## installation
